@@ -79,12 +79,12 @@ function Contact() {
                 <Suspense fallback={null}>
                     <Environment preset="night" />
                     <Stars radius={200} depth={100} count={10000} factor={4} saturation={1} fade speed={2} />
-                    <OrbitControls enablePan enableZoom={false} enableRotate />
+                    <OrbitControls enablePan enableZoom={true} enableRotate />
                     <Model
-                        url={"/models/earth/earth.glb"}
+                        url={"/models/earth/scene.gltf"}
                         position={[-1.5, 0, 0]}
                         rotation={[0, 0, 0]}
-                        scale={[2, 2, 2]}
+                        scale={[10, 10, 10]}
                     />
                     <ambientLight intensity={3} />
                 </Suspense>
