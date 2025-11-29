@@ -69,7 +69,7 @@ function Navbar() {
                            onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                     >The-Perfect Time</label>
                 </div>
-                <div className="flex justify-center align-center gap-1 flex-col z-10 pr-5"
+                <div className="flex justify-center align-center gap-1 flex-col z-10"
                      onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                      onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                      onClick={HandleSideBar}
@@ -82,18 +82,18 @@ function Navbar() {
 
             <div className="lg:w-[600px] md:w-[400px] sm:w-[100%] w-[100%] flex justify-center items-center z-10 flex-col fixed top-0 right-0 p-10 bg-black border-l h-[100vh] translate-x-200" ref={sidebarRef}>
 
-                <div className="flex justify-between items-center z-10 mb-10 w-100 absolute top-0 mt-10 pl-4 pr-4" >
+                <div className="flex justify-around items-center z-10 mb-10 w-100 absolute top-0 mt-10 " >
                     <div className="flex items-center">
                         <img src="/logo%20(2).png" alt="logo" className="w-[70px]"/>
                         <h1
-                            className=" font-bold md:text-4xl lg:text-5xl leading-tight "
+                            className=" font-bold md:text-4xl lg:text-5xl sm:text-2xl leading-tight "
                             onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                             onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
 
                         >Mava</h1>
                     </div>
                     <div>
-                        <i className="bi bi-x-lg md:text-4xl lg:text-5xl leading-tight "
+                        <i className="bi bi-x-lg md:text-4xl lg:text-5xl sm:text-2xl  leading-tight "
                            onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                            onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                            onClick={HandleSideBar}
@@ -104,14 +104,14 @@ function Navbar() {
 
                 <div className="flex justify-items-start items-center z-10 w-100 p-10 gap-5">
                     <div>
-                        <i className="bi bi-house md:text-2xl lg:text-4xl leading-tight"
+                        <i className="bi bi-house md:text-3xl lg:text-4xl sm:text-2xl  leading-tight"
                            onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                            onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                         ></i>
                     </div>
                     <div>
                         <Link to={"/"}
-                            className=" font-bold md:text-2xl lg:text-4xl leading-tight "
+                            className=" font-bold md:text-3xl lg:text-4xl sm:text-2xl  leading-tight "
                             onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                             onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                         >Home page </Link>
@@ -122,14 +122,14 @@ function Navbar() {
 
                 <div className="flex justify-items-start items-center z-10 w-100 p-10 gap-5">
                     <div>
-                        <i className="bi bi-receipt md:text-2xl lg:text-4xl leading-tight"
+                        <i className="bi bi-receipt md:text-3xl lg:text-4xl sm:text-2xl  leading-tight"
                            onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                            onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                         ></i>
                     </div>
                     <div>
                         <Link to={"/procurement/"}
-                            className=" font-bold md:text-2xl lg:text-4xl leading-tight"
+                            className=" font-bold md:text-3xl lg:text-4xl sm:text-2xl  leading-tight"
                             onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                             onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                         >Procurement</Link>
@@ -138,14 +138,14 @@ function Navbar() {
                 </div>
                 <div className="flex justify-items-start items-center z-10 w-100 p-10 gap-5">
                     <div>
-                        <i className="bi bi-box-seam md:text-2xl lg:text-4xl leading-tight"
+                        <i className="bi bi-box-seam md:text-3xl lg:text-4xl sm:text-2xl  leading-tight"
                            onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                            onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                         ></i>
                     </div>
                     <div>
                         <Link to={"/logistics/"}
-                            className=" font-bold md:text-2xl lg:text-4xl leading-tight "
+                            className=" font-bold md:text-3xl lg:text-4xl sm:text-2xl  leading-tight "
                             onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                             onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                         >Logistics</Link>
@@ -155,14 +155,14 @@ function Navbar() {
 
                 <div className="flex justify-items-start items-center z-10 w-100 p-10 gap-5">
                     <div>
-                        <i className="bi bi-person-lines-fill md:text-2xl lg:text-4xl leading-tight "
+                        <i className="bi bi-person-lines-fill md:text-3xl lg:text-4xl sm:text-2xl  leading-tight "
                            onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                            onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                         ></i>
                     </div>
                     <div>
                         <Link to={"/contacts/"}
-                            className=" font-bold md:text-4xl lg:text-2xl leading-tight"
+                            className=" font-bold md:text-3xl lg:text-4xl sm:text-2xl leading-tight"
                             onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                             onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                         >Contacts</Link>

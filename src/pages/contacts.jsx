@@ -97,16 +97,20 @@ function Contact() {
 
             {/* FORM PANEL */}
             <div className="fixed inset-0 z-[10] pointer-events-none">
-                <div className="h-full w-full flex items-center justify-center md:justify-end px-4 md:px-12">
-                    <div className="pointer-events-auto w-full max-w-[420px]">
-                        <div
+                <div className="h-full w-full flex items-start md:items-center justify-center md:justify-end px-4 md:px-12 py-6 md:py-0">
+
+                    <div className="pointer-events-auto w-full max-w-[420px] max-h-[calc(100dvh-3rem)] md:max-h-[calc(100dvh-5rem)]">
+
+                    <div
                             className="group rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl
                          shadow-[0_0_80px_rgba(255,255,255,0.06)]
                          transition-all duration-300
-                         hover:-translate-y-1 hover:border-white/25 hover:bg-white/10"
+                         hover:-translate-y-1 hover:border-white/25 hover:bg-white/10 "
+
                         >
-                            <div className="p-6 sm:p-8">
-                                {/* Top */}
+                        <div className="p-5 sm:p-6 md:p-8 overflow-y-auto max-h-[calc(100dvh-3rem)] md:max-h-[calc(100dvh-5rem)]">
+
+                        {/* Top */}
                                 <div className="mb-6">
                                     <div className="text-xs uppercase tracking-[0.25em] text-white/60"
                                          onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
@@ -115,13 +119,13 @@ function Contact() {
                                     </div>
                                     <h2
                                         data-cursor="true"
-                                        className="mt-2 text-2xl sm:text-3xl font-extrabold tracking-tight text-white"
+                                        className="mt-2 text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-white"
                                         onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                                         onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}
                                     >
                                         Let’s talk<span className="text-[#AD1C42]">.</span>
                                     </h2>
-                                    <p className="mt-2 text-white/70 leading-relaxed"
+                                    <p className="mt-2 text-sm sm:text-base text-white/70 leading-relaxed"
                                        onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                                        onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}>
                                         Send a message and we’ll reply as fast as possible.
@@ -131,7 +135,7 @@ function Contact() {
                                 <form onSubmit={handleSubmit} className="space-y-4">
                                     {/* Name */}
                                     <div>
-                                        <label className="block text-sm text-white/70 mb-2"
+                                        <label className="block text-xs sm:text-sm text-white/70 mb-2"
                                                onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                                                onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}>Name</label>
                                         <input
@@ -152,7 +156,7 @@ function Contact() {
 
                                     {/* Email */}
                                     <div>
-                                        <label className="block text-sm text-white/70 mb-2"
+                                        <label className="block text-xs sm:text-sm text-white/70 mb-2"
                                                onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                                                onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}>Email</label>
                                         <input
@@ -173,7 +177,7 @@ function Contact() {
 
                                     {/* Subject */}
                                     <div>
-                                        <label className="block text-sm text-white/70 mb-2"
+                                        <label className="block text-xs sm:text-sm text-white/70 mb-2"
                                                onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                                                onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}>Subject</label>
                                         <input
@@ -194,14 +198,14 @@ function Contact() {
 
                                     {/* Message */}
                                     <div>
-                                        <label className="block text-sm text-white/70 mb-2"
+                                        <label className="block text-xs sm:text-sm text-white/70 mb-2"
                                                onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                                                onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}>Message</label>
                                         <textarea
                                             data-cursor="true"
                                             name="message"
                                             required
-                                            rows={4}
+                                            rows={3}
                                             placeholder="Tell me a bit more..."
                                             className="w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3
                                  text-white placeholder:text-white/35 outline-none
@@ -218,7 +222,7 @@ function Contact() {
                                         data-cursor="true"
                                         type="submit"
                                         className="w-full rounded-2xl bg-[#AD1C42] px-5 py-3 font-semibold text-white
-
+                                block text-xs sm:text-sm mb-2
                                transition-all duration-300
                                hover:-translate-y-1 hover:shadow-[0_0_50px_rgba(173,28,66,0.35)]
                                active:translate-y-0"
