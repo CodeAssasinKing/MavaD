@@ -1,0 +1,14 @@
+@import url('https://fonts.cdnfonts.com/css/bankgothic-md-bt');
+
+
+
+body{
+    font-family: 'BankGothic Md BT', sans-serif;
+    user-select: none;
+    color: #fff;
+}
+
+
+body, html{
+    overflow-x: hidden;
+}

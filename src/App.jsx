@@ -1,14 +1,18 @@
 import React from "react";
 import "./App.css";
-
-
+import Header from "./components/header.jsx";
+import Procurement from "./pages/procurement.jsx";
+import Logistics from "./pages/logistics.jsx";
+import {Routes, Route} from "react-router-dom";
 function App() {
 
     return (
-        <div className="container">
-            <h1>Website is still under development</h1>
-            <p>We’re building something new. Please check back soon.</p>
-        </div>
+       <Routes>
+           <Route path="/" element={<Header/>}></Route>
+           <Route path="/procurement/" element={<Procurement/>}></Route>
+           <Route path="/logistics/" element={<Logistics/>}></Route>
+       </Routes>
+
     )
 }
 
