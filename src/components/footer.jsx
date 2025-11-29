@@ -199,7 +199,7 @@ export default function Footer({
     );
 
     return (
-        <footer ref={ref} className="relative bg-black">
+        <footer ref={ref} className="relative bg-black pt-10">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 py-14 sm:py-16">
                 <div className="space-y-6">
                     <Stepper steps={steps} start={inView} stepMs={420} />

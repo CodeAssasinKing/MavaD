@@ -161,7 +161,7 @@ function Navbar() {
                         ></i>
                     </div>
                     <div>
-                        <Link to={"/"}
+                        <Link to={"/contacts/"}
                             className=" font-bold text-4xl "
                             onMouseEnter={() => gsap.to("#cursor", {scale: 3, duration:0.2})}
                             onMouseLeave={() => gsap.to("#cursor", {scale: 1, duration:0.2})}

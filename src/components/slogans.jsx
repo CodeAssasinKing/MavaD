@@ -57,7 +57,7 @@ export default function CenterTypingSlogan() {
     const text = useTypewriter(slogans, { typeMs: 40, deleteMs: 18, holdMs: 900 });
 
     return (
-        <div className="absolute inset-0 z-1 flex items-start justify-center mt-10 pointer-events-none">
+        <div className="absolute inset-0 z-1 flex items-start justify-center mt-30 pointer-events-none">
             <h1
                 className="pointer-events-auto text-white text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
                 onMouseEnter={() => gsap.to("#cursor", { scale: 3, duration: 0.2 })}
