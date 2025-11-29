@@ -2,6 +2,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Navbar from "../components/navbar.jsx";
 import gsap from "gsap";
+import Footer from "../components/footer.jsx";
 
 function useInView(options = { threshold: 0.25 }) {
     const ref = useRef(null);
@@ -230,6 +231,7 @@ export default function Procurement() {
     );
 
     return (
+        <>
         <div
             className="min-h-screen bg-black text-white"
             onPointerOverCapture={handleOver}
@@ -431,5 +433,7 @@ export default function Procurement() {
                 </Reveal>
             </section>
         </div>
+            <Footer></Footer>
+            </>
     );
 }

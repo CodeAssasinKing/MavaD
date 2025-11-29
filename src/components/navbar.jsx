@@ -60,7 +60,7 @@ function Navbar() {
     }
     return (
         <>
-            <div className="w-lvw bg-black h-[10vh] flex justify-between items-center p-10 ">
+            <div className="fixed top-0 left-0 w-screen bg-black h-[10vh] flex justify-between items-center px-10 z-[10]">
                 <div className="logo flex justify-center items-center">
                     <img src="/logo%20(2).png" alt="logo" className="w-[50px]"/>
                     <label htmlFor="logo"

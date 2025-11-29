@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import Navbar from "../components/navbar.jsx";
 import Particles from "../components/particles.jsx";
+import Footer from "../components/footer.jsx";
 function Header() {
 
     useEffect(() => {
@@ -29,6 +30,8 @@ function Header() {
             />
             <Navbar/>
             <Particles />
+
+            <Footer></Footer>
 
         </>
 

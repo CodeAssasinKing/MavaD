@@ -2,7 +2,11 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Navbar from "../components/navbar.jsx";
 import gsap from "gsap";
-
+import AirFreightSection from "../components/airFreight.jsx";
+import Sea from "../components/sea.jsx";
+import Road from "../components/road.jsx";
+import Rail from "../components/rail.jsx";
+import Footer from "../components/footer.jsx";
 /* ---------- helpers ---------- */
 function useInView(options = { threshold: 0.25 }) {
     const ref = useRef(null);
@@ -104,7 +108,7 @@ export default function Logistics() {
                         className="h-full w-full object-cover grayscale opacity-25"
                         draggable={false}
                     />
-                    <div className="absolute inset-0 bg-black/75" />
+                    <div className="absolute inset-0 bg-black/40" />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black" />
                 </div>
 
@@ -268,20 +272,22 @@ export default function Logistics() {
             <section className="mx-auto max-w-6xl px-4 sm:px-6 pb-20">
                 <Reveal className="text-center">
                     <h2 className="text-2xl sm:text-3xl font-semibold">
-                        Next: <span className="text-[#AD1C42]">Transport modes</span>
+                        NEXT: <span className="text-[#AD1C42]">OUR SERVICES</span>
                     </h2>
                     <p className="mt-3 text-white/70">
-                        We’ll make separate components: Air, Road, Sea, Railway, Customs, Warehousing, Insurance, Tracking.
+                        Introducing you our services
                     </p>
                 </Reveal>
             </section>
 
-            {/* Notes:
-          Put images in /public:
-          - /logistics-hero.jpg
-          - /logistics-warehouse.jpg
-          - /logistics-tracking.jpg
-      */}
+
+            <AirFreightSection></AirFreightSection>
+            <Sea></Sea>
+            <Road></Road>
+            <Rail></Rail>
+
+            <Footer></Footer>
+
         </div>
     );
 }

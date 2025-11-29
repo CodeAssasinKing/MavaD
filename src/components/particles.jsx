@@ -206,11 +206,16 @@ export default function MavaColoredParticles() {
 
     return (
         <div style={{ width: "100vw", height: "90svh", background: "black" }} className="relative">
-            <Canvas camera={{ position: [0, 0, 28], fov: 45 }} dpr={[1, 2]}>
+            <Canvas camera={{ position: [0, 0, 28], fov: 45 }} dpr={[1, 2]} style={{zIndex:9}}>
                 <ambientLight intensity={1} />
                 <ResponsiveWord font={font}/>
             </Canvas>
             <CenterTypingSlogan />
+            <div className="absolute inset-0">
+                <img src="/technological-futuristic-holograms-logistics-means-transport.jpg" alt="" className="h-full w-full object-cover grayscale opacity-15" draggable={false} />
+                <div className="absolute inset-0 bg-black/10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/70 to-black" />
+            </div>
         </div>
     );
 }
