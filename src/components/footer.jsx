@@ -75,8 +75,8 @@ function Stepper({ steps, start, stepMs = 380 }) {
 
 export default function Footer({
                                    address = "174, Atamyrat Niyazov avenue, Ashgabat, Turkmenistan. 774000",
-                                   phone = "+99371846366",
-                                   email = "ops.mava@gmail.com",
+                                   phone = "+99362200285",
+                                   email = "info@ma-va.net",
                                    responseTime = "Faster than you're used to.",
                                }) {
     const [ref, inView] = useInView({ threshold: 0.25 });
@@ -169,21 +169,21 @@ export default function Footer({
                     </div>
                 </div>
 
-                {/* Response time */}
-                <div
-                    data-cursor="true"
-                    className="group rounded-2xl border border-white/10 bg-white/5 p-6
-                     transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/10
-                     hover:shadow-[0_0_45px_rgba(255,255,255,0.10)]"
-                >
-                    <div className="text-sm uppercase tracking-[0.25em] text-white/60">
-                        Response time
-                    </div>
-                    <div className="mt-3 text-white/85 leading-relaxed">
-                        <span className="font-semibold text-[#AD1C42]">Response time:</span>{" "}
-                        {responseTime}
-                    </div>
-                </div>
+                {/*/!* Response time *!/*/}
+                {/*<div*/}
+                {/*    data-cursor="true"*/}
+                {/*    className="group rounded-2xl border border-white/10 bg-white/5 p-6*/}
+                {/*     transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/10*/}
+                {/*     hover:shadow-[0_0_45px_rgba(255,255,255,0.10)]"*/}
+                {/*>*/}
+                {/*    <div className="text-sm uppercase tracking-[0.25em] text-white/60">*/}
+                {/*        Response time*/}
+                {/*    </div>*/}
+                {/*    <div className="mt-3 text-white/85 leading-relaxed">*/}
+                {/*        <span className="font-semibold text-[#AD1C42]">Response time:</span>{" "}*/}
+                {/*        {responseTime}*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>,
 
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-white/10 pt-6">
